@@ -12,6 +12,6 @@ export const signup = async (req, res, next) => {
         res.status(201).json("user created successfully!")
         
     } catch (error) {
-        next(errorHandler(550, 'error from the function'));
+        next(error);
     }
 };
